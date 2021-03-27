@@ -18,7 +18,7 @@ At the begining of each round each bot will begin in either the top right or top
 ## C. The Fertility Band
 The "Fertility Band" consists of 5 horrizontal regions which span the entire width of the board: A central "Ideal" region, two "Good" regions above and below the center, and two "OK" regions even farther from the center. Each region has a height in tiles as well as a fertility multiplier that affects tha value of plants grown in it, which are described below:
 
-(Each line represents one tile)
+(Each line represents one row of tiles)
 - OK     (1.0x)
 - OK     (1.0x)
 - OK     (1.0x)
@@ -35,11 +35,71 @@ When each round begins, the fertility band's "Ideal" region will be on the first
 
 ## D. Taking your Turn
 
-> #### UNDER CONSTRUCTION
+Each turn, bots can move and then perform one action.
+
+### 1. Movement:
+
+Bots will move up to their *MAX_MOVEMENT* toward the specified (x,y) board position.
+
+>There are no collisions (with terrain or opponents) so there is no path-finding and two or more bots can occupy the same tile.
+>
+>If a bot moves onto a "Green Grocer" tile, all harvested crops in their inventory are automatically sold.
+>
+>Failure to meet the specifications of the *Move* action (e.g. trying to move to a tile past the bounds of the board or a tile outside the movement range) will result in the bot remaining at its previous location.
+
+### 2. Actions:
+
+#### a. Plant:
+
+The bot plants any number of seeds in any combination of types within *PLANT_RADIUS* of their location.
+
+>Crops cannot be planted at a location that is within *PROTECTION_RADIUS* of another bot or another bot's scarecrow.
+>
+>Failure to meet the specifications of the *Plant* action (e.g. trying to plant outside the plant range, not having enough seeds, or planting on a tile that already has a crop growing on it) will result in no action being taken.
+
+#### a. Harvest:
+
+The bot harvests the specified ripe crops (no matter which bot planted them) within *HARVEST_RADIUS* of their location.
+
+>Crops within *PROTECTION_RADIUS* of another bot or another bot's scarecrow cannot be harvested.
+>
+>Failure to meet the specifications of the *Harvest* action (e.g. trying to harvest from a tile outside the harvest range) will result in no action being taken.
+>
+>Any crops the bot tries to harvest which cannot be carried (due to a full inventory) will be left alone.
+
+#### a. Buy:
+
+The bot buys any number of seeds in any combination of types from the Green Grocer
+
+>The buy action cannot be taken unless the bot is on a "Green Grocer" tile.
+>
+>Failure to meet the specifications of the *Buy* action (e.g. trying to buy more than can be paid for, trying to buy more than can fit in the bot's inventory, or trying to buy a negative quantity of something) will result in no action being taken.
+>
+>If a bot only has enough money/inventory for part of a purchase, each (item, quantity) pair will be handled in order untill one fails.
+
+#### a. Use Item:
+
+The bot uses its item at its current location
+
+>Failure to meet the specifications of the *Use Item* action (See Section F. *Items and Upgrades* for each item's required syntax) will result in no action being taken.
 
 ## E. Growing Plants
 
-> #### UNDER CONSTRUCTION
+Each crop has a **growth_time** and **current value** paramater, and will grow over the course of *growh_time* turns. Its *current_value* begins at 0 and increases at the end of each turn based on the following formula:
+
+>*current value* += *value_per_turn* * \[(1 - *fertility_sensitivity*) + (*tile_fertility* * *fertility_sensitivity*)]
+
+Once *growth_time* turns have elapsed the crop will ripen, become harvestable, and no longer increase (or decrease) in value.
+
+To explain the formula further:
+
+**value_per_turn** is a property of the plant type, and represents the value the crop would gain each turn if it wasn't affected by the fertility band.
+
+**tile_fertility** is a property of the tile the plant is on, and can change from one turn to the next. It represents how well-suited the tile is for plant growth.
+
+**fertility_sensitivity** is a property of the plant type, and represents the proportion of the plant's *value_per_turn* that is multiplied by *tile_fertility*. 
+
+To put the math into easier terms, a plant with a *fertility_sensitivity* of 0 is completely unaffected by the fertility band and will be worth *growth_time* * *value_per_turn* once it ripens, no matter what kind of tile it grows on. As *fertility_sensitivity* increases, the more affect the *tile_fertility* will have on the crop's final value.
 
 ## F. Items and Upgrades
 
