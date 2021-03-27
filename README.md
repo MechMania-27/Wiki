@@ -1,6 +1,13 @@
 # Wiki
 Wikis for the game mechanics and starterpacks. 
 
+## *TODO:*
+*1. Add mention of crop's seed price in Section E
+*2. Add list of available plants (under section E OR in a new section)
+*3. Add info for section F: Items and Upgrades
+*4. Add info for section G: Achivements
+*5. Start work on the Starterpacks part and add a section for API description
+
 # Game Mechanics
 ## A. Overview and Objective  
 You and your cousins (competitors) are competing for your late uncle Phineas Worcestershire's estate.  
