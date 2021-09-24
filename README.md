@@ -145,7 +145,7 @@ A once in a lifetime opportunity, this incredibly expensive seed, when planted i
 
 Each bot can take either 1 item of 1 upgrade with them for each match
 
-Items can be activated to grant a powerful boost, but only one time per math
+Items can be activated to grant a powerful boost, but only one time per match
 
 Upgrades increase the capabilities of the bot for the entire match but aren't as powerful as Items
 
