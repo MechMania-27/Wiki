@@ -127,7 +127,7 @@ Basic plant, takes time to grow, can’t use fertility, but can make you an hone
 
 Can use fertility and grows quickly. Can’t turn a profit without using the fertility band though
 
-<image src="images/GrapeHarvested.png" width="30px">  **Grapes**
+<image src="images/GrapeHarvested.png" width="30px">  **Grape**
 
 More expensive to plant, but sells for more. Can make minor use of fertility
 
@@ -135,7 +135,7 @@ More expensive to plant, but sells for more. Can make minor use of fertility
 
 Also expensive, but makes great use of the fertility band
 
-<image src="images/PeanutHarvested.png" width="30px">  **Peanuts**
+<image src="images/PeanutHarvested.png" width="30px">  **Peanut**
 
 Troll crop used to take up space on the other farmer’s side
 
@@ -203,19 +203,19 @@ Triples the farmer’s movement speed for the next turn
 
 <image src="images/Backpack.png" width="30px">  **Backpack**
 
-Carrying capacity increased.
+Carrying capacity increased. (30 -> 50)
 
 <image src="images/Scythe.png" width="30px">  **Scythe**
 
-Harvest radius increased. (not plant radius though)
+Harvest radius increased. (not plant radius though) (1 -> 5)
 
 <image src="images/Green Grocer Loyalty Card.png" width="30px">  **Green Grocer Loyalty Card**
 
 After spending $25 at the Green Grocer, buy seeds for 5% less.
 
-<image src="images/Moon Shoes.png" width="30px">  **Long Legs**
+<image src="images/Moon Shoes.png" width="30px">  **Longer Legs**
 
-Movement speed increased.
+Movement speed increased. (10 -> 20)
 
 <image src="images/Rabbit_s Foot.png" width="30px">  **Rabbit’s Foot**
 
@@ -223,11 +223,11 @@ Crops have a 5% chance of dropping twice when harvested.
 
 <image src="images/Seed-a-Pult.png" width="30px">  **Seed-A-Pult**
 
-Plant radius increased
+Plant radius increased. (1 -> 5)
 
 <image src="images/Spyglass.png" width="30px">  **Spyglass**
 
-Increases the farmer's protection radius
+Increases the farmer's protection radius. (2 -> 3)
 
 ## G. Achievements
 
@@ -281,7 +281,7 @@ Win a game without ever planting a crop
 
 <image src="images/Fruits of our Labor.png" width="30px">  **Fruits of our Labor**
 
-Win a game only planting, harvesting, and selling fruit crops.
+Win a game only planting, harvesting, and selling fruit crops (Ducham-Fruit, Jogan-Fruit, Grape).
 
 <image src="images/Richer than Phineas Himself.png" width="30px">  **Richer than Phineas Himself**
 
