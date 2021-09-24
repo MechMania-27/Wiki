@@ -10,6 +10,7 @@ Wiki for the game's mechanics.
 - [Growing Plants](#e-growing-plants)
 - [Items and Upgrades](#f-items-and-upgrades)
 - [Achievements](#g-achievements)
+- [Registration](#registration)
 
 # Game Mechanics
 ## A. Overview and Objectives
@@ -286,3 +287,16 @@ Win a game only planting, harvesting, and selling fruit crops (Ducham-Fruit, Jog
 <image src="images/Richer Than Phineas Himself.png" width="30px">  **Richer than Phineas Himself**
 
 Have $2,500 or more in your account at the end of the game.
+
+# Registration
+For the competition, you’ll need to have the following things installed:
+
+- Python 3. This is one of the languages you can use to implement your bot.
+
+- Java 8. This will allow you to run the game engine locally, so you can test your code before you push it.
+
+- [Node.js](https://nodejs.org/en/), (version 14.17.6). Once you have that installed, try running `npm i -g mechmania`. The package can be found [here](https://www.npmjs.com/package/mechmania), and when you’re able to run `mm help`, you know you'll have downloaded it correctly. From there, you can register a team by doing `mm register`. We ask that you only register once per team.
+
+If you need help, please ask us in the Discord #ask-a-question-here channel. We'll be providing help throughout the competition!
+
+For basic questions, please run `mm help` before asking.
