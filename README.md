@@ -1,5 +1,5 @@
 # Wiki
-Wikis for the game's mechanics. 
+Wiki for the game's mechanics. 
 
 # Game Mechanics
 ## A. Overview and Objective  
