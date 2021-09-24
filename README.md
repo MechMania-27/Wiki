@@ -180,19 +180,19 @@ Triples the farmer’s movement speed for the next turn
 
 **Backpack**
 
-Carrying capacity increased.
+Carrying capacity increased. (30 -> 50)
 
-**Electric Scythe**
+**Scythe**
 
-Harvest radius increased. (not plant radius though)
+Harvest radius increased. (not plant radius though) (1 -> 5)
 
 **Green Grocer Loyalty Card**
 
 After spending $25 at the Green Grocer, buy seeds for 5% less.
 
-**Moon Shoes**
+**Longer Legs**
 
-Movement speed increased.
+Movement speed increased. (10 -> 20)
 
 **Rabbit’s Foot**
 
@@ -200,11 +200,11 @@ Crops have a 5% chance of dropping twice when harvested.
 
 **Seed-A-Pult**
 
-Plant radius increased
+Plant radius increased (1 -> 5)
 
 **Spyglass**
 
-Increases the farmer's potection radius
+Increases the farmer's potection radius (2 -> 3)
 
 ## G. Achivements
 
