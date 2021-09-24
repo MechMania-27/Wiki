@@ -1,8 +1,18 @@
 # Wiki
 Wiki for the game's mechanics.
 
+# Contents
+
+- [Overview and Objectives](#a-overview-and-objectives)
+- [The Field](#b-the-field)
+- [The Fertility Band](#c-the-fertility-band)
+- [Taking Your Turn](#d-taking-your-turn)
+- [Growing Plants](#e-growing-plants)
+- [Items and Upgrades](#f-items-and-upgrades)
+- [Achievements](#g-achievements)
+
 # Game Mechanics
-## A. Overview and Objective  
+## A. Overview and Objectives
 You and your cousins (competitors) are competing for your late uncle Phineas Worcestershire's estate.  
 His will says that the estate goes to whomever makes the best use of his land, or more practically, whomever makes the most money.  
 
@@ -13,7 +23,7 @@ Each round consists of a single growing season, during which you and your oppone
 ## B. The Field
 Each round is played over a number of turns on a rectangular field which is 30 tiles wide and 50 tiles tall. The top several rows of the field cannot be planted on, and feature "Green Grocer" tiles, on which bots can buy seeds and sell produce.
 
-At the begining of each round each bot will begin in either the top right or top left section of the field. They will have until the "Fertility Band" (representing the ideal growing environment) moves from the top of the board to the bottom, to make as much money as possible.
+At the beginning of each round each bot will begin in either the top right or top left section of the field. They will have until the "Fertility Band" (representing the ideal growing environment) moves from the top of the board to the bottom, to make as much money as possible.
 
 ## C. The Fertility Band
 The "Fertility Band" consists of 5 horizontal regions which span the entire width of the board: A central "Ideal" region, two "Good" regions above and below the center, and two "OK" regions even farther from the center. Each region has a height in tiles as well as a fertility multiplier that affects tha value of plants grown in it, which are described below:
@@ -31,7 +41,7 @@ The "Fertility Band" consists of 5 horizontal regions which span the entire widt
 
 Any tile lower than the fertility band can still be planted on, but has a fertility multiplier of 0. (The effects of this multiplier are described in "Growing Plants"). Any tile above the fertility band is infertile and cannot be planted on. In addition, any plants growing on a tile which becomes infertile (due to the fertility band moving down) will become worthless.
 
-When each round begins, the fertility band's **"OK"** region will be on the first plantable tile **on turn 13**. (just beneath the unplantable region containg the "Green Grocer" tiles). Every 3 turns the entire fertility band will move down by one tile. Once the entire fertility band moves off the bottom of the board, the game ends (this results in 180 turns). (i.e. at the begining of the turn where every tile of the field is "infertile", the game ends and neither bot gets to take an action)
+When each round begins, the fertility band's **"OK"** region will be on the first plantable tile **on turn 13**. (just beneath the unplantable region containing the "Green Grocer" tiles). Every 3 turns the entire fertility band will move down by one tile. Once the entire fertility band moves off the bottom of the board, the game ends (this results in 180 turns). (i.e. at the beginning of the turn where every tile of the field is "infertile", the game ends and neither bot gets to take an action)
 
 ![Fertility Band GIF](images/FertilityBand.gif)
 
@@ -77,7 +87,7 @@ The bot buys any number of seeds in any combination of types from the Green Groc
 >
 >Failure to meet the specifications of the *Buy* action (e.g. trying to buy more than can be paid for, trying to buy more than can fit in the bot's inventory, or trying to buy a negative quantity of something) will result in no action being taken.
 >
->If a bot only has enough money/inventory for part of a purchase, each (item, quantity) pair will be handled in order untill one fails.
+>If a bot only has enough money/inventory for part of a purchase, each (item, quantity) pair will be handled in order until one fails.
 
 #### d. Use Item:
 
@@ -89,7 +99,7 @@ The bot uses its item at its current location
 
 In order to grow crops you'll need seeds which can be purchased from the green grocer.
 
-Each crop has a **growth_time** and **current value** paramater, and will grow over the course of *growh_time* turns. Its *current_value* begins at 0 and increases at the end of each turn based on the following formula:
+Each crop has a **growth_time** and **current value** parameter, and will grow over the course of *growth_time* turns. Its *current_value* begins at 0 and increases at the end of each turn based on the following formula:
 
 >*current value* += *value_per_turn* * \[(1 - *fertility_sensitivity*) + (*tile_fertility* * *fertility_sensitivity*)]
 
@@ -107,40 +117,51 @@ To put the math into easier terms, a plant with a *fertility_sensitivity* of 0 i
 
 ### Plant List
 
-#### **Crop** \[Fertility Sensitivity], \[Price], \[Growth Time], \[Value Per Turn]
+#### **Crop**
 
-<image src="images/PotatoHarvested.png" width="30px">  **Potato** \[0%] \[$5] \[4 turns] \[1.375]
+<image src="images/PotatoHarvested.png" width="30px">  **Potato** 
 
 Basic plant, takes time to grow, can’t use fertility, but can make you an honest living
 
-<image src="images/CornHarvested.png" width="30px">  **Corn**, \[50%] \[$5] \[2 turns] \[2.5] 
+<image src="images/CornHarvested.png" width="30px">  **Corn**
 
 Can use fertility and grows quickly. Can’t turn a profit without using the fertility band though
 
-<image src="images/GrapeHarvested.png" width="30px">  **Grapes**, \[50%] \[$15] \[10 turns] \[1.65] 
+<image src="images/GrapeHarvested.png" width="30px">  **Grapes**
 
 More expensive to plant, but sells for more. Can make minor use of fertility
 
-<image src="images/JoganHarvested.png" width="30px">  **Jogan-Fruit** \[75%] \[$20] \[5 turns] \[4]
+<image src="images/JoganHarvested.png" width="30px">  **Jogan-Fruit**
 
 Also expensive, but makes great use of the fertility band
 
-<image src="images/PeanutHarvested.png" width="30px">  **Peanuts** \[0%] \[$5] \[30 turns] \[0.333] 
+<image src="images/PeanutHarvested.png" width="30px">  **Peanuts**
 
 Troll crop used to take up space on the other farmer’s side
 
-<image src="images/WheatHarvested.png" width="30px">  **Quadrotriticale** \[25%] \[$30] \[15 turns] \[2.6] 
+<image src="images/WheatHarvested.png" width="30px">  **Quadrotriticale**
 
 Turns a solid profit with the fertility band, and is fairly low risk,  takes a long time to grow though
 
-<image src="images/DuchamHarvested.png" width="30px">  **Ducham-Fruit** \[100%] \[$100] \[5 turns] \[20] 
+<image src="images/DuchamHarvested.png" width="30px">  **Ducham-Fruit** 
 
 Can turn an amazing profit using the fertility band, but very cost prohibitive to acquire.
 
-<image src="images/GoldenHarvested.png" width="30px">  **Golden Corn** \[100%] \[$1000] \[3 turns] \[500] 
+<image src="images/GoldenHarvested.png" width="30px">  **Golden Corn**
 
 A once in a lifetime opportunity, this incredibly expensive seed, when planted in the most fertile regions can turn an equally incredible profit.
 
+
+| Crop | Fertility Sensitivity | Profit Margin | Price | Growth Time | Min Sell Value | Max Sell Value | Growth Value Per Turn |
+| ---- | --------------------- | ------------- | ----- | ----------- | -------------- | -------------- | --------------------- |
+| Potato | 0% | 110% | $5.00 | 4 turns | $5.50 | $5.50 | 1.375 |
+| Corn | 50% | 100% | $5.00 | 2 turns | $2.50 | $6.25 | 2.500 |
+| Grape | 50% | 125% | $15.00 | 10 turns | $8.25 | $18.73 | 1.650 |
+| Jogan Fruit | 75% | 129% | $20.00 | 5 turns | $5.00 | $25.70 | 4.000 |
+| Peanut | 0% | 100% | $5.00 | 30 turns | $5.00 | $5.00 | 0.167 |
+| Quadrotritacale | 25% | 136% | $30.00 | 15 turns | $29.25 | $40.76 | 2.600 |
+| Ducham Fruit | 100% | 100% | $100.00 | 5 turns | $0.00 | $138.00 | 20.00 |
+| Golden Corn | 100% | 225% | $1000.00 | 3 turns | $0.00 | $2250.00 | 500.0 |
 
 
 ## F. Items and Upgrades
@@ -206,13 +227,13 @@ Plant radius increased
 
 <image src="images/Spyglass.png" width="30px">  **Spyglass**
 
-Increases the farmer's potection radius
+Increases the farmer's protection radius
 
-## G. Achivements
+## G. Achievements
 
-Achivements are fun goals to be completed accross the entire tournament.
+Achievements are fun goals to be completed across the entire tournament.
 
-### Achivement List
+### Achievement List
 
 <image src="images/A Worthy Heir.png" width="30px">  **A Worthy Heir**
 
