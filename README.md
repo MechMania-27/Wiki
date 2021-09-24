@@ -1,9 +1,5 @@
 # Wiki
-Wikis for the game mechanics and starterpacks. 
-
-## *TODO:*
-
-*1. Start work on the Starterpacks part and add a section for API description*
+Wikis for the game's mechanics. 
 
 # Game Mechanics
 ## A. Overview and Objective  
@@ -43,7 +39,7 @@ Each turn, bots can move and then perform one action.
 
 ### 1. Movement:
 
-Bots will move up to their *MAX_MOVEMENT* toward the specified (x,y) board position.
+Bots will move up to 10 tiles toward the specified (x,y) board position.
 
 >There are no collisions (with terrain or opponents) so there is no path-finding and two or more bots can occupy the same tile.
 >
@@ -55,17 +51,17 @@ Bots will move up to their *MAX_MOVEMENT* toward the specified (x,y) board posit
 
 #### a. Plant:
 
-The bot plants any number of seeds in any combination of types within *PLANT_RADIUS* of their location.
+The bot plants any number of seeds in any combination of types within 1 tile of their location.
 
->Crops cannot be planted at a location that is within *PROTECTION_RADIUS* of another bot or another bot's scarecrow.
+>Crops cannot be planted at a location that is within 2 tiles of another bot or another bot's scarecrow.
 >
 >Failure to meet the specifications of the *Plant* action (e.g. trying to plant outside the plant range, not having enough seeds, or planting on a tile that already has a crop growing on it) will result in no action being taken.
 
 #### b. Harvest:
 
-The bot harvests the specified ripe crops (no matter which bot planted them) within *HARVEST_RADIUS* of their location.
+The bot harvests the specified ripe crops (no matter which bot planted them) within 1 tile of their location.
 
->Crops within *PROTECTION_RADIUS* of another bot or another bot's scarecrow cannot be harvested.
+>Crops within 2 tiles of another bot or another bot's scarecrow cannot be harvested.
 >
 >Failure to meet the specifications of the *Harvest* action (e.g. trying to harvest from a tile outside the harvest range) will result in no action being taken.
 >
@@ -177,18 +173,18 @@ Allows the farmer to buy and sell crops and seeds from anywhere on the farm for 
 
 **Coffee Thermos**
 
-Triples the farmer’s MAX_MOVEMENT for the next turn
+Triples the farmer’s movement speed for the next turn
 
 ### Upgrade List
 
 
 **Backpack**
 
-CARRYING_CAPACITY increased.
+Carrying capacity increased.
 
 **Electric Scythe**
 
-HARVEST_RADIUS increased. (not PLANT_RADIUS though)
+Harvest radius increased. (not plant radius though)
 
 **Green Grocer Loyalty Card**
 
@@ -196,7 +192,7 @@ After spending $25 at the Green Grocer, buy seeds for 5% less.
 
 **Moon Shoes**
 
-MAX_MOVEMENT increased.
+Movement speed increased.
 
 **Rabbit’s Foot**
 
@@ -204,15 +200,15 @@ Crops have a 5% chance of dropping twice when harvested.
 
 **Seed-A-Pult**
 
-PLANT_RADIUS increased
+Plant radius increased
 
 **Spyglass**
 
-Increases PROTECTION_RADIUS
+Increases the farmer's potection radius
 
 ## G. Achivements
 
-Achivements are fun goals to be completed accross the entire tournament. Completeing them doesn't grant any tournament standing, they're just for fun.
+Achivements are fun goals to be completed accross the entire tournament.
 
 ### Achivement List
 
@@ -263,5 +259,3 @@ Sell a golden corn
 **Botanical Burglary**
 
 Win a game without ever planting a crop
-
-# Starter Packs
