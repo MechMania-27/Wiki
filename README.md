@@ -16,7 +16,7 @@ Each round is played over a number of turns on a rectangular field which is 30 t
 At the begining of each round each bot will begin in either the top right or top left section of the field. They will have until the "Fertility Band" (representing the ideal growing environment) moves from the top of the board to the bottom, to make as much money as possible.
 
 ## C. The Fertility Band
-The "Fertility Band" consists of 5 horrizontal regions which span the entire width of the board: A central "Ideal" region, two "Good" regions above and below the center, and two "OK" regions even farther from the center. Each region has a height in tiles as well as a fertility multiplier that affects tha value of plants grown in it, which are described below:
+The "Fertility Band" consists of 5 horizontal regions which span the entire width of the board: A central "Ideal" region, two "Good" regions above and below the center, and two "OK" regions even farther from the center. Each region has a height in tiles as well as a fertility multiplier that affects tha value of plants grown in it, which are described below:
 
 (Each line represents one row of tiles)
 - OK     (1.0x)
@@ -31,7 +31,7 @@ The "Fertility Band" consists of 5 horrizontal regions which span the entire wid
 
 Any tile lower than the fertility band can still be planted on, but has a fertility multiplier of 0. (The effects of this multiplier are described in "Growing Plants"). Any tile above the fertility band is infertile and cannot be planted on. In addition, any plants growing on a tile which becomes infertile (due to the fertility band moving down) will become worthless.
 
-When each round begins, the fertility band's "Ideal" region will be on the first plantable tile (just beneath the unplantable region containg the "Green Grocer" tiles). Every 3 turns the entire fertility band will move down by one tile. Once the entire fertility band moves off the bottom of the board, the game ends. (i.e. at the begining of the turn where every tile of the field is "infertile", the game ends and neither bot gets to take an action)
+When each round begins, the fertility band's **"OK"** region will be on the first plantable tile **on turn 13**. (just beneath the unplantable region containg the "Green Grocer" tiles). Every 3 turns the entire fertility band will move down by one tile. Once the entire fertility band moves off the bottom of the board, the game ends (this results in 180 turns). (i.e. at the begining of the turn where every tile of the field is "infertile", the game ends and neither bot gets to take an action)
 
 ## D. Taking your Turn
 
