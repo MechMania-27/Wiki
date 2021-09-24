@@ -1,5 +1,5 @@
 # Wiki
-Wiki for the game's mechanics. 
+Wiki for the game's mechanics.
 
 # Game Mechanics
 ## A. Overview and Objective  
@@ -32,6 +32,8 @@ The "Fertility Band" consists of 5 horizontal regions which span the entire widt
 Any tile lower than the fertility band can still be planted on, but has a fertility multiplier of 0. (The effects of this multiplier are described in "Growing Plants"). Any tile above the fertility band is infertile and cannot be planted on. In addition, any plants growing on a tile which becomes infertile (due to the fertility band moving down) will become worthless.
 
 When each round begins, the fertility band's **"OK"** region will be on the first plantable tile **on turn 13**. (just beneath the unplantable region containg the "Green Grocer" tiles). Every 3 turns the entire fertility band will move down by one tile. Once the entire fertility band moves off the bottom of the board, the game ends (this results in 180 turns). (i.e. at the begining of the turn where every tile of the field is "infertile", the game ends and neither bot gets to take an action)
+
+![Fertility Band GIF](images/FertilityBand.gif)
 
 ## D. Taking your Turn
 
@@ -107,35 +109,35 @@ To put the math into easier terms, a plant with a *fertility_sensitivity* of 0 i
 
 #### **Crop** \[Fertility Sensitivity], \[Price], \[Growth Time], \[Value Per Turn]
 
-**Potato** \[0%] \[$5] \[4 turns] \[1.375]
+<image src="images/PotatoHarvested.png" width="30px">  **Potato** \[0%] \[$5] \[4 turns] \[1.375]
 
 Basic plant, takes time to grow, can’t use fertility, but can make you an honest living
 
-**Corn**, \[50%] \[$5] \[2 turns] \[2.5] 
+<image src="images/CornHarvested.png" width="30px">  **Corn**, \[50%] \[$5] \[2 turns] \[2.5] 
 
 Can use fertility and grows quickly. Can’t turn a profit without using the fertility band though
 
-**Grapes**, \[50%] \[$15] \[10 turns] \[1.65] 
+<image src="images/GrapeHarvested.png" width="30px">  **Grapes**, \[50%] \[$15] \[10 turns] \[1.65] 
 
 More expensive to plant, but sells for more. Can make minor use of fertility
 
-**Jogan-Fruit** \[75%] \[$20] \[5 turns] \[4]
+<image src="images/JoganHarvested.png" width="30px">  **Jogan-Fruit** \[75%] \[$20] \[5 turns] \[4]
 
 Also expensive, but makes great use of the fertility band
 
-**Peanuts** \[0%] \[$5] \[30 turns] \[0.333] 
+<image src="images/PeanutHarvested.png" width="30px">  **Peanuts** \[0%] \[$5] \[30 turns] \[0.333] 
 
 Troll crop used to take up space on the other farmer’s side
 
-**Quadrotriticale** \[25%] \[$30] \[15 turns] \[2.6] 
+<image src="images/WheatHarvested.png" width="30px">  **Quadrotriticale** \[25%] \[$30] \[15 turns] \[2.6] 
 
 Turns a solid profit with the fertility band, and is fairly low risk,  takes a long time to grow though
 
-**Ducham-Fruit** \[100%] \[$100] \[5 turns] \[20] 
+<image src="images/DuchamHarvested.png" width="30px">  **Ducham-Fruit** \[100%] \[$100] \[5 turns] \[20] 
 
 Can turn an amazing profit using the fertility band, but very cost prohibitive to acquire.
 
-**Golden Corn** \[100%] \[$1000] \[3 turns] \[500] 
+<image src="images/GoldenHarvested.png" width="30px">  **Golden Corn** \[100%] \[$1000] \[3 turns] \[500] 
 
 A once in a lifetime opportunity, this incredibly expensive seed, when planted in the most fertile regions can turn an equally incredible profit.
 
@@ -151,58 +153,58 @@ Upgrades increase the capabilities of the bot for the entire match but aren't as
 
 ### Item List
 
-**Rain Totem**
+<image src="images/Rain Totem.png" width="30px">  **Rain Totem**
 
 Cause each crop in a 5x5 square centered on the farmer’s position to grow up to three times this turn instead of only once.
 
-**Fertility Idol**
+<image src="images/Fertility Idol.png" width="30px">  **Fertility Idol**
 
 Doubles the fertility of all tiles within radius 2 for the next growth step. 
 
-**Pesticide**
+<image src="images/Pesticide.png" width="30px">  **Pesticide**
 
 Decrease the current value of all crops within 1 radius by 20%.
 
-**Scarecrow**
+<image src="images/Scarecrow.png" width="30px">  **Scarecrow**
 
 Protects tiles within radius 2 from harvest or planting by the opponent.(5x5)
 
-**Delivery Drone**
+<image src="images/Delivery Drone.png" width="30px">  **Delivery Drone**
 
 Allows the farmer to buy and sell crops and seeds from anywhere on the farm for one turn.
 
-**Coffee Thermos**
+<image src="images/Coffee Thermos.png" width="30px">  **Coffee Thermos**
 
 Triples the farmer’s movement speed for the next turn
 
 ### Upgrade List
 
 
-**Backpack**
+<image src="images/Backpack.png" width="30px">  **Backpack**
 
 Carrying capacity increased.
 
-**Electric Scythe**
+<image src="images/Scythe.png" width="30px">  **Scythe**
 
 Harvest radius increased. (not plant radius though)
 
-**Green Grocer Loyalty Card**
+<image src="images/Green Grocer Loyalty Card.png" width="30px">  **Green Grocer Loyalty Card**
 
 After spending $25 at the Green Grocer, buy seeds for 5% less.
 
-**Moon Shoes**
+<image src="images/Moon Shoes.png" width="30px">  **Long Legs**
 
 Movement speed increased.
 
-**Rabbit’s Foot**
+<image src="images/Rabbit_s Foot.png" width="30px">  **Rabbit’s Foot**
 
 Crops have a 5% chance of dropping twice when harvested.
 
-**Seed-A-Pult**
+<image src="images/Seed-a-Pult.png" width="30px">  **Seed-A-Pult**
 
 Plant radius increased
 
-**Spyglass**
+<image src="images/Spyglass.png" width="30px">  **Spyglass**
 
 Increases the farmer's potection radius
 
@@ -212,54 +214,54 @@ Achivements are fun goals to be completed accross the entire tournament.
 
 ### Achivement List
 
-**A Worthy Heir**
+<image src="images/A Worthy Heir.png" width="30px">  **A Worthy Heir**
 
 Win a game.
 
-**My Favorite Customer**
+<image src="images/My Favorite Customer.png" width="30px">  **My Favorite Customer**
 
 Spend $1,000 at the Green Grocer in one game.
 
-**Seedy Business**
+<image src="images/Seedy Business.png" width="30px">  **Seedy Business**
 
 Harvest and sell a crop that another farmer planted.
 
-**Omni-Agriculturalist**
+<image src="images/Omni-Agriculturist.png" width="30px">  **Omni-Agriculturalist**
 
 Sell at least one crop of each type besides peanuts and golden corn in a single game.
 
-**Not Worth the Dirt He Sows**
+<image src="images/Not Worth the Dirt he Sows.png" width="30px">  **Not Worth the Dirt He Sows**
 
 Finish a game with *less* money than you started with.
 
-**Dust Bowl**
+<image src="images/Dust Bowl.png" width="30px">  **Dust Bowl**
 
 Have 10 of your crops destroyed by the fertility zone passing over them.
 
-**Grapes of Mild Displeasure**
+<image src="images/Grapes of Mild Displeasure.png" width="30px">  **Grapes of Mild Displeasure**
 
 Steal and sell 5 of your opponent’s grape crops.
 
-**Ornithophobia**
+<image src="images/Ornithophobia.png" width="30px">  **Ornithophobia**
 
 Place a scarecrow within the effect radius of the other farmer's scarecrow.
 
-**Stalks and Bonds**
+<image src="images/Stalks and Bonds.png" width="30px">  **Stalks and Bonds**
 
 Sell a golden corn.
 
-**It Ain't Much But It's Honest Work**
+<image src="images/It Ain_t Much But It_s Honest Work.png" width="30px">  **It Ain't Much But It's Honest Work**
 
 Win a game without ever harvesting a crop that your opponent planted.
 
-**Botanical Burglary**
+<image src="images/Botanical Burglary.png" width="30px">  **Botanical Burglary**
 
 Win a game without ever planting a crop
 
-**Fruits of our Labor**
+<image src="images/Fruits of our Labor.png" width="30px">  **Fruits of our Labor**
 
 Win a game only planting, harvesting, and selling fruit crops.
 
-**Richer than Phineas Himself**
+<image src="images/Richer than Phineas Himself.png" width="30px">  **Richer than Phineas Himself**
 
 Have $2,500 or more in your account at the end of the game.
