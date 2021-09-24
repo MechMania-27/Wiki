@@ -131,7 +131,7 @@ Basic plant, takes time to grow, can’t use fertility, but can make you an hone
 
 Can use fertility and grows quickly. Can’t turn a profit without using the fertility band though
 
-**Grapes**
+**Grape**
 
 More expensive to plant, but sells for more. Can make minor use of fertility
 
@@ -139,7 +139,7 @@ More expensive to plant, but sells for more. Can make minor use of fertility
 
 Also expensive, but makes great use of the fertility band
 
-**Peanuts**
+**Peanut**
 
 Troll crop used to take up space on the other farmer’s side
 
@@ -207,19 +207,19 @@ Triples the farmer’s movement speed for the next turn
 
 **Backpack**
 
-Carrying capacity increased.
+Carrying capacity increased. (30 -> 50)
 
-**Electric Scythe**
+**Scythe**
 
-Harvest radius increased. (not plant radius though)
+Harvest radius increased. (not plant radius though) (1 -> 5)
 
 **Green Grocer Loyalty Card**
 
 After spending $25 at the Green Grocer, buy seeds for 5% less.
 
-**Moon Shoes**
+**Longer Legs**
 
-Movement speed increased.
+Movement speed increased. (10 -> 20)
 
 **Rabbit’s Foot**
 
@@ -227,11 +227,11 @@ Crops have a 5% chance of dropping twice when harvested.
 
 **Seed-A-Pult**
 
-Plant radius increased
+Plant radius increased. (1 -> 5)
 
 **Spyglass**
 
-Increases the farmer's potection radius
+Increases the farmer's potection radius. (2 -> 3)
 
 ## G. Achivements
 
@@ -285,7 +285,7 @@ Win a game without ever planting a crop
 
 **Fruits of our Labor**
 
-Win a game only planting, harvesting, and selling fruit crops.
+Win a game only planting, harvesting, and selling fruit crops (Ducham-Fruit, Jogan-Fruit, Grape).
 
 **Richer than Phineas Himself**
 
