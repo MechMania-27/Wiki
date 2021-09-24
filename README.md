@@ -1,6 +1,22 @@
 # Wiki
 Wiki for the game's mechanics. 
 
+# Contents
+
+## A. Overview and Objectives
+
+## B. The Fiels
+
+## C. The Fertility Band
+
+## D. Taking Your Turn
+
+## E. Growing Plants
+
+## F. Items and Upgrades
+
+## G. Achievements
+
 # Game Mechanics
 ## A. Overview and Objective  
 You and your cousins (competitors) are competing for your late uncle Phineas Worcestershire's estate.  
@@ -105,40 +121,51 @@ To put the math into easier terms, a plant with a *fertility_sensitivity* of 0 i
 
 ### Plant List
 
-#### **Crop** \[Fertility Sensitivity], \[Price], \[Growth Time], \[Value Per Turn]
+#### **Crop**
 
-**Potato** \[0%] \[$5] \[4 turns] \[1.375]
+**Potato** 
 
 Basic plant, takes time to grow, can’t use fertility, but can make you an honest living
 
-**Corn**, \[50%] \[$5] \[2 turns] \[2.5] 
+**Corn**
 
 Can use fertility and grows quickly. Can’t turn a profit without using the fertility band though
 
-**Grapes**, \[50%] \[$15] \[10 turns] \[1.65] 
+**Grapes**
 
 More expensive to plant, but sells for more. Can make minor use of fertility
 
-**Jogan-Fruit** \[75%] \[$20] \[5 turns] \[4]
+**Jogan-Fruit**
 
 Also expensive, but makes great use of the fertility band
 
-**Peanuts** \[0%] \[$5] \[30 turns] \[0.333] 
+**Peanuts**
 
 Troll crop used to take up space on the other farmer’s side
 
-**Quadrotriticale** \[25%] \[$30] \[15 turns] \[2.6] 
+**Quadrotriticale**
 
 Turns a solid profit with the fertility band, and is fairly low risk,  takes a long time to grow though
 
-**Ducham-Fruit** \[100%] \[$100] \[5 turns] \[20] 
+**Ducham-Fruit**
 
 Can turn an amazing profit using the fertility band, but very cost prohibitive to acquire.
 
-**Golden Corn** \[100%] \[$1000] \[3 turns] \[500] 
+**Golden Corn**
 
 A once in a lifetime opportunity, this incredibly expensive seed, when planted in the most fertile regions can turn an equally incredible profit.
 
+
+| Crop | Fertility Sensitivity | Profit Margin | Price | Growth Time | Min Sell Value | Max Sell Value | Growth Value Per Turn |
+| ---- | --------------------- | ------------- | ----- | ----------- | -------------- | -------------- | --------------------- |
+| Potato | 0% | 110% | $5.00 | 4 turns | $5.50 | $5.50 | 1.375 |
+| Corn | 50% | 100% | $5.00 | 2 turns | $2.50 | $6.25 | 2.500 |
+| Grape | 50% | 125% | $15.00 | 10 turns | $8.25 | $18.73 | 1.650 |
+| Jogan Fruit | 75% | 129% | $20.00 | 5 turns | $5.00 | $25.70 | 4.000 |
+| Peanut | 0% | 100% | $5.00 | 30 turns | $5.00 | $5.00 | 0.167 |
+| Quadrotritacale | 25% | 136% | $30.00 | 15 turns | $29.25 | $40.76 | 2.600 |
+| Ducham Fruit | 100% | 100% | $100.00 | 5 turns | $0.00 | $138.00 | 20.00 |
+| Golden Corn | 100% | 225% | $1000.00 | 3 turns | $0.00 | $2250.00 | 500.0 |
 
 
 ## F. Items and Upgrades
