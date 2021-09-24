@@ -251,7 +251,7 @@ Harvest and sell a crop that another farmer planted.
 
 Sell at least one crop of each type besides peanuts and golden corn in a single game.
 
-<image src="images/Not Worth the Dirt he Sows.png" width="30px">  **Not Worth the Dirt He Sows**
+<image src="images/Not Worth the Dirt He Sows.png" width="30px">  **Not Worth the Dirt He Sows**
 
 Finish a game with *less* money than you started with.
 
@@ -283,6 +283,6 @@ Win a game without ever planting a crop
 
 Win a game only planting, harvesting, and selling fruit crops (Ducham-Fruit, Jogan-Fruit, Grape).
 
-<image src="images/Richer than Phineas Himself.png" width="30px">  **Richer than Phineas Himself**
+<image src="images/Richer Than Phineas Himself.png" width="30px">  **Richer than Phineas Himself**
 
 Have $2,500 or more in your account at the end of the game.
