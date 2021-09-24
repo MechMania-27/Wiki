@@ -180,19 +180,19 @@ Triples the farmer’s movement speed for the next turn
 
 **Backpack**
 
-Carrying capacity increased. (30 -> 50)
+Carrying capacity increased.
 
-**Scythe**
+**Electric Scythe**
 
-Harvest radius increased. (not plant radius though) (1 -> 5)
+Harvest radius increased. (not plant radius though)
 
 **Green Grocer Loyalty Card**
 
 After spending $25 at the Green Grocer, buy seeds for 5% less.
 
-**Longer Legs**
+**Moon Shoes**
 
-Movement speed increased. (10 -> 20)
+Movement speed increased.
 
 **Rabbit’s Foot**
 
@@ -200,11 +200,11 @@ Crops have a 5% chance of dropping twice when harvested.
 
 **Seed-A-Pult**
 
-Plant radius increased (1 -> 5)
+Plant radius increased
 
 **Spyglass**
 
-Increases the farmer's potection radius (2 -> 3)
+Increases the farmer's potection radius
 
 ## G. Achivements
 
@@ -212,17 +212,13 @@ Achivements are fun goals to be completed accross the entire tournament.
 
 ### Achivement List
 
-**Not Worth the Dirt He Sows**
+**A Worthy Heir**
 
-Finish a game with less money than you started.
+Win a game.
 
 **My Favorite Customer**
 
 Spend $1,000 at the Green Grocer in one game.
-
-**Dust Bowl**
-
-Have 10 of your crops destroyed by the fertility zone passing over them.
 
 **Seedy Business**
 
@@ -232,30 +228,38 @@ Harvest and sell a crop that another farmer planted.
 
 Sell at least one crop of each type besides peanuts and golden corn in a single game.
 
+**Not Worth the Dirt He Sows**
+
+Finish a game with *less* money than you started with.
+
+**Dust Bowl**
+
+Have 10 of your crops destroyed by the fertility zone passing over them.
+
 **Grapes of Mild Displeasure**
 
 Steal and sell 5 of your opponent’s grape crops.
 
-**It Ain’t Much, but It’s Honest Work**
-
-Win a game without ever harvesting a crop that your opponent planted.
-
-**A Worthy Heir**
-
-Win a game.
-
-**Richer than Phineas Himself**
-
-Have $2,500 or more in your account at the end of the game.
-
 **Ornithophobia**
 
-Place a scarecrow within the effect radius of the other farmer’s scarecrow.
+Place a scarecrow within the effect radius of the other farmer's scarecrow.
 
 **Stalks and Bonds**
 
-Sell a golden corn
+Sell a golden corn.
+
+**It Ain't Much But It's Honest Work**
+
+Win a game without ever harvesting a crop that your opponent planted.
 
 **Botanical Burglary**
 
 Win a game without ever planting a crop
+
+**Fruits of our Labor**
+
+Win a game only planting, harvesting, and selling fruit crops.
+
+**Richer than Phineas Himself**
+
+Have $2,500 or more in your account at the end of the game.
