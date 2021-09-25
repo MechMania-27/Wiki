@@ -22,7 +22,7 @@ Mech Mania 27 will consist of a round-robin style tournament where each pair of 
 Each round consists of a single growing season, during which you and your opponent will try to make as much money as possible by growing your own crops, stealing your opponent's crops, as well as making use of special items and upgrades.
 
 ## B. The Field
-Each round is played over a number of turns on a rectangular field which is 30 tiles wide and 50 tiles tall. The top several rows of the field cannot be planted on, and feature "Green Grocer" tiles, on which bots can buy seeds and sell produce.
+Each round is played over a number of turns on a rectangular field which is 30 tiles wide and 50 tiles tall. The top several rows of the field cannot be planted on, and are "Grass". The central 5 tiles of the top-most row are "Green Grocer" tiles, on which bots can buy seeds and sell produce.
 
 At the beginning of each round each bot will begin in either the top right or top left section of the field. They will have until the "Fertility Band" (representing the ideal growing environment) moves from the top of the board to the bottom, to make as much money as possible.
 
