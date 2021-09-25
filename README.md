@@ -193,7 +193,7 @@ Protects tiles within radius 2 from harvest or planting by the opponent.(5x5)
 
 <image src="images/Delivery Drone.png" width="30px">  **Delivery Drone**
 
-Allows the farmer to buy and sell crops and seeds from anywhere on the farm for one turn.
+Allows the farmer to buy crops and seeds from anywhere on the farm for one turn.
 
 <image src="images/Coffee Thermos.png" width="30px">  **Coffee Thermos**
 
